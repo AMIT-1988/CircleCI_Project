@@ -1,13 +1,13 @@
 # test_Calculator.py
 
 import pytest
-from App.Calculation.calculation import Calculator
+from App.Calculation.calculation import calculator
 
 
 @pytest.fixture
 def calc():
     """Provides a Calculator instance."""
-    return Calculator()
+    return calculator()
 
 def test_addition(calc):
     """Test addition method."""
