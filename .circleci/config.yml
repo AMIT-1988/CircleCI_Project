@@ -17,7 +17,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      python/install-packages/pip install pytest
+      python/install-packages
       - run:
           name: Build an artifact
           command: touch example.txt
